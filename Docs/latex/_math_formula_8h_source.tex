@@ -1,0 +1,39 @@
+\hypertarget{_math_formula_8h_source}{}\doxysection{Math\+Formula.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <queue>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Token.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_math_formula}{MathFormula}}}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10 \textcolor{keyword}{private}:}
+\DoxyCodeLine{11     }
+\DoxyCodeLine{12     std::string formula; }
+\DoxyCodeLine{13     std::queue<Token> tokens; }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} processString();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} shuntingYard();}
+\DoxyCodeLine{26     }
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{30 }
+\DoxyCodeLine{34     \mbox{\hyperlink{class_math_formula_af958c6953afe38a8387b8f864102dab8}{MathFormula}}(std::string formula);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_math_formula_ac32958806a2493cde42a42dc0a0ee19f}{calculate}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{44 }
+\DoxyCodeLine{48     std::string \mbox{\hyperlink{class_math_formula_a0279100ad623cd55a98e2ca28a9d0dcb}{toString}}()}
+\DoxyCodeLine{49     \{}
+\DoxyCodeLine{50         \textcolor{keywordflow}{return} this-\/>formula;}
+\DoxyCodeLine{51     \}}
+\DoxyCodeLine{52 \};}
+\DoxyCodeLine{53 }
+
+\end{DoxyCode}

@@ -1,0 +1,57 @@
+\hypertarget{_token_8h_source}{}\doxysection{Token.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{4 \textcolor{keyword}{class }\mbox{\hyperlink{class_token}{Token}}}
+\DoxyCodeLine{5 \{}
+\DoxyCodeLine{6 \textcolor{keyword}{public}:}
+\DoxyCodeLine{8     \textcolor{keyword}{enum} \mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Type}}}
+\DoxyCodeLine{9     \{}
+\DoxyCodeLine{10         Number,}
+\DoxyCodeLine{11         Operator,}
+\DoxyCodeLine{12         LeftPar}
+\DoxyCodeLine{13     \};}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{16     \textcolor{keyword}{enum} \mbox{\hyperlink{class_token_a992b6b0acbb886ee56b3e7753a4edbd5}{Operation}}}
+\DoxyCodeLine{17     \{}
+\DoxyCodeLine{18         Add = \textcolor{charliteral}{'+'},}
+\DoxyCodeLine{19         Sub = \textcolor{charliteral}{'-\/'},}
+\DoxyCodeLine{20         Mul = \textcolor{charliteral}{'*'},}
+\DoxyCodeLine{21         Div = \textcolor{charliteral}{'/'},}
+\DoxyCodeLine{22         Pow = \textcolor{charliteral}{'\string^'}}
+\DoxyCodeLine{23     \};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{30     \mbox{\hyperlink{class_token_a786c65ddbf6a125036d36fa9c2dad022}{Token}}(\textcolor{keywordtype}{float} value);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{33 }
+\DoxyCodeLine{37     \mbox{\hyperlink{class_token_a786c65ddbf6a125036d36fa9c2dad022}{Token}}(\mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Type}} type);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{40 }
+\DoxyCodeLine{45     \mbox{\hyperlink{class_token_a786c65ddbf6a125036d36fa9c2dad022}{Token}}(\mbox{\hyperlink{class_token_a992b6b0acbb886ee56b3e7753a4edbd5}{Operation}} operation);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{48 }
+\DoxyCodeLine{51     \mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Type}} \mbox{\hyperlink{class_token_abcb763ac98144b5dbfc9a0ce5b1faf09}{getType}}();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{54 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_token_a908a153ef352f6564b48f6c7456c8f47}{getValue}}();}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{60 }
+\DoxyCodeLine{63     \mbox{\hyperlink{class_token_a992b6b0acbb886ee56b3e7753a4edbd5}{Operation}} \mbox{\hyperlink{class_token_af55d41e7e3d4e82d436623566ae64384}{getOperation}}();}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{66 }
+\DoxyCodeLine{69     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_token_ac2ce1bddce46e750d379483f0764c61f}{getWeight}}();}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 \textcolor{keyword}{private}:}
+\DoxyCodeLine{73     }
+\DoxyCodeLine{74     \mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Type}} type; }
+\DoxyCodeLine{75     \textcolor{keywordtype}{float} value; }
+\DoxyCodeLine{76     \mbox{\hyperlink{class_token_a992b6b0acbb886ee56b3e7753a4edbd5}{Operation}} operation; }
+\DoxyCodeLine{77     \textcolor{keywordtype}{int} weight = 0; }
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 \};}
+\DoxyCodeLine{80 }
+
+\end{DoxyCode}

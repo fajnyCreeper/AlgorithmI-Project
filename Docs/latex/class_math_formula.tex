@@ -1,0 +1,71 @@
+\hypertarget{class_math_formula}{}\doxysection{Math\+Formula Class Reference}
+\label{class_math_formula}\index{MathFormula@{MathFormula}}
+
+
+Class representing math formula.  
+
+
+
+
+{\ttfamily \#include $<$Math\+Formula.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_math_formula_af958c6953afe38a8387b8f864102dab8}{Math\+Formula}} (std\+::string formula)
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_math_formula_ac32958806a2493cde42a42dc0a0ee19f}{calculate}} ()
+\begin{DoxyCompactList}\small\item\em Calculate the formula. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_math_formula_a0279100ad623cd55a98e2ca28a9d0dcb}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Parse to string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing math formula. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_math_formula_af958c6953afe38a8387b8f864102dab8}\label{class_math_formula_af958c6953afe38a8387b8f864102dab8}} 
+\index{MathFormula@{MathFormula}!MathFormula@{MathFormula}}
+\index{MathFormula@{MathFormula}!MathFormula@{MathFormula}}
+\doxysubsubsection{\texorpdfstring{MathFormula()}{MathFormula()}}
+{\footnotesize\ttfamily Math\+Formula\+::\+Math\+Formula (\begin{DoxyParamCaption}\item[{std\+::string}]{formula }\end{DoxyParamCaption})}
+
+
+
+Class constructor. 
+
+Construct object by passing math formula Constructor first calls process\+String() function and then shunting\+Yard() function 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_math_formula_ac32958806a2493cde42a42dc0a0ee19f}\label{class_math_formula_ac32958806a2493cde42a42dc0a0ee19f}} 
+\index{MathFormula@{MathFormula}!calculate@{calculate}}
+\index{calculate@{calculate}!MathFormula@{MathFormula}}
+\doxysubsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily float Math\+Formula\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculate the formula. 
+
+Using post fix notation format of math formula calculates the value of the given formula \begin{DoxyReturn}{Returns}
+Calculated value of formula as float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_math_formula_a0279100ad623cd55a98e2ca28a9d0dcb}\label{class_math_formula_a0279100ad623cd55a98e2ca28a9d0dcb}} 
+\index{MathFormula@{MathFormula}!toString@{toString}}
+\index{toString@{toString}!MathFormula@{MathFormula}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Math\+Formula\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parse to string. 
+
+Returns infix math formula without spaces as string \begin{DoxyReturn}{Returns}
+String representation of formula 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Math\+Formula.\+h\item 
+Math\+Formula.\+cpp\end{DoxyCompactItemize}

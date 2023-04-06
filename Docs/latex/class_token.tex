@@ -1,0 +1,159 @@
+\hypertarget{class_token}{}\doxysection{Token Class Reference}
+\label{class_token}\index{Token@{Token}}
+
+
+Class representing token of formula.  
+
+
+
+
+{\ttfamily \#include $<$Token.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_token_acf70e9411196c602738c3ed2428c7137}\label{class_token_acf70e9411196c602738c3ed2428c7137}} 
+enum \mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Type}} \{ {\bfseries Number}
+, {\bfseries Operator}
+, {\bfseries Left\+Par}
+ \}
+\begin{DoxyCompactList}\small\item\em Type enum. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_token_a992b6b0acbb886ee56b3e7753a4edbd5}\label{class_token_a992b6b0acbb886ee56b3e7753a4edbd5}} 
+enum \mbox{\hyperlink{class_token_a992b6b0acbb886ee56b3e7753a4edbd5}{Operation}} \{ \newline
+{\bfseries Add} = \textquotesingle{}+\textquotesingle{}
+, {\bfseries Sub} = \textquotesingle{}-\/\textquotesingle{}
+, {\bfseries Mul} = \textquotesingle{}$\ast$\textquotesingle{}
+, {\bfseries Div} = \textquotesingle{}/\textquotesingle{}
+, \newline
+{\bfseries Pow} = \textquotesingle{}$^\wedge$\textquotesingle{}
+ \}
+\begin{DoxyCompactList}\small\item\em Operation type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_token_a786c65ddbf6a125036d36fa9c2dad022}{Token}} (float value)
+\begin{DoxyCompactList}\small\item\em Float constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_token_ac5b1af731830b70f07e948c466becf5e}{Token}} (\mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Type}} type)
+\begin{DoxyCompactList}\small\item\em Universal constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_token_a28b959e1a0227b57e88546d6522d111c}{Token}} (\mbox{\hyperlink{class_token_a992b6b0acbb886ee56b3e7753a4edbd5}{Operation}} operation)
+\begin{DoxyCompactList}\small\item\em Operator constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Type}} \mbox{\hyperlink{class_token_abcb763ac98144b5dbfc9a0ce5b1faf09}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Returns \mbox{\hyperlink{class_token}{Token}} Type. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_token_a908a153ef352f6564b48f6c7456c8f47}{get\+Value}} ()
+\begin{DoxyCompactList}\small\item\em Returns float value of token. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_token_a992b6b0acbb886ee56b3e7753a4edbd5}{Operation}} \mbox{\hyperlink{class_token_af55d41e7e3d4e82d436623566ae64384}{get\+Operation}} ()
+\begin{DoxyCompactList}\small\item\em Returns operation type. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_token_ac2ce1bddce46e750d379483f0764c61f}{get\+Weight}} ()
+\begin{DoxyCompactList}\small\item\em Returns operator weight. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing token of formula. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_token_a786c65ddbf6a125036d36fa9c2dad022}\label{class_token_a786c65ddbf6a125036d36fa9c2dad022}} 
+\index{Token@{Token}!Token@{Token}}
+\index{Token@{Token}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{Token()}{Token()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Token\+::\+Token (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Float constructor. 
+
+Constructor used for creating token of Type.\+Number 
+\begin{DoxyParams}{Parameters}
+{\em value} & Float value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_token_ac5b1af731830b70f07e948c466becf5e}\label{class_token_ac5b1af731830b70f07e948c466becf5e}} 
+\index{Token@{Token}!Token@{Token}}
+\index{Token@{Token}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{Token()}{Token()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Token\+::\+Token (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Universal constructor. 
+
+Constructor used to create object with given type 
+\begin{DoxyParams}{Parameters}
+{\em type} & Type value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_token_a28b959e1a0227b57e88546d6522d111c}\label{class_token_a28b959e1a0227b57e88546d6522d111c}} 
+\index{Token@{Token}!Token@{Token}}
+\index{Token@{Token}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{Token()}{Token()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Token\+::\+Token (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_token_a992b6b0acbb886ee56b3e7753a4edbd5}{Operation}}}]{operation }\end{DoxyParamCaption})}
+
+
+
+Operator constructor. 
+
+Constructor used for creating token of Type.\+Operator This constructor also assigns weight of the operator 
+\begin{DoxyParams}{Parameters}
+{\em operation} & Operation value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_token_af55d41e7e3d4e82d436623566ae64384}\label{class_token_af55d41e7e3d4e82d436623566ae64384}} 
+\index{Token@{Token}!getOperation@{getOperation}}
+\index{getOperation@{getOperation}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{getOperation()}{getOperation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_token_a992b6b0acbb886ee56b3e7753a4edbd5}{Token\+::\+Operation}} Token\+::get\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns operation type. 
+
+\begin{DoxyReturn}{Returns}
+Type of operator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_token_abcb763ac98144b5dbfc9a0ce5b1faf09}\label{class_token_abcb763ac98144b5dbfc9a0ce5b1faf09}} 
+\index{Token@{Token}!getType@{getType}}
+\index{getType@{getType}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Token\+::\+Type}} Token\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns \mbox{\hyperlink{class_token}{Token}} Type. 
+
+\begin{DoxyReturn}{Returns}
+Type of token 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_token_a908a153ef352f6564b48f6c7456c8f47}\label{class_token_a908a153ef352f6564b48f6c7456c8f47}} 
+\index{Token@{Token}!getValue@{getValue}}
+\index{getValue@{getValue}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily float Token\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns float value of token. 
+
+\begin{DoxyReturn}{Returns}
+Value of number as float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_token_ac2ce1bddce46e750d379483f0764c61f}\label{class_token_ac2ce1bddce46e750d379483f0764c61f}} 
+\index{Token@{Token}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily int Token\+::get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns operator weight. 
+
+\begin{DoxyReturn}{Returns}
+Weight of operator 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Token.\+h\item 
+Token.\+cpp\end{DoxyCompactItemize}
