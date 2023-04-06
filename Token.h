@@ -1,3 +1,9 @@
+/*
+ *-------------
+ * CC-BY-4.0
+ * Matej Foltin
+ * ------------
+ */
 #pragma once
 
 //! Class representing token of formula
